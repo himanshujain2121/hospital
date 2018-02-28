@@ -1,0 +1,23 @@
+<p>
+  department-list works!
+</p>
+<table class="table">
+  <thead>
+    <tr>
+      <td>Id</td>
+      <td>Name</td>
+      <td>City</td>
+      <td>Select</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let dept of department">
+      <td>{{dept.departmentId}}</td>
+      <td>{{dept.departmentName}}</td>
+      <td>{{dept.departmentLocation}}</td>
+      <td>
+        <button type="button" class="btn btn-primary" (click)="selectEmployee(dept)">Select</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

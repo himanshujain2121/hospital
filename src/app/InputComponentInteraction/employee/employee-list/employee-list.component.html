@@ -1,0 +1,19 @@
+<p>
+  employee-list works!
+</p>
+<table class="table">
+  <thead>
+    <tr>
+      <td>Id</td>
+      <td>Name</td>
+      <td>City</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let emp of employeeData">
+      <td>{{emp.Id}}</td>
+      <td>{{emp.Name}}</td>
+      <td>{{emp.City}}</td>
+    </tr>
+  </tbody>
+</table>
